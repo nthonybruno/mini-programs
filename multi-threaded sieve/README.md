@@ -1,4 +1,27 @@
-Actual Output & Runtimes:
+# Multi Threaded Sieve
+
+Implementation of the segmented sieve of Eratosthenes to find prime numbers having two or more digits that are ‘3’. Unlike the standard sieve of Eratosthenes, that 
+operates over the range [2, b], the segmented version can start at an arbitrary lower bound a, working over the range [a, b]. Since a wide range of values can be programmed in segments, this algorithm lends itself nicely to a multithreaded approach
+
+### Pseudocode for the Segmented Sieve of Eratosthenes Algorithm:
+Purpose: Used to find primes in range [a, b].
+Steps:
+1. Use standard sieve of Eratosthenes to find all primes up to and including 
+sqrt(b), call them low_primes[]
+2. Create a boolean array high_primes[] with length = b - a + 1 and 
+initialize each element to true
+3. for each prime p in low_primes[],
+ set i = ceil((double)a/p) * p - a
+ if a <= p
+ set i = i + p
+ starting at i, cross off all multiples of p in high_primes[]
+4. for each high_primes[i] that is true, print i + a
+####
+
+    Usage: ./mtsieve -s <starting value> -e <ending value> -t <num threads>
+
+
+### Actual Output & Runtimes:
 
 Intel(R) Core(TM) i7-8750H CPU @ 2.20GHz
 
