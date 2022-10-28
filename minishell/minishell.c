@@ -1,10 +1,3 @@
-
-/*
-    Name: Nicholas Szegheo and Anthony Bruno
-    Assignment: Minishell in C
-    Pledge: I pledge my honor that I have abided by the Stevens Honor System.
-    Date: 4/15/2020
-*/
 #include <ctype.h>
 #include <errno.h>
 #include <limits.h>
