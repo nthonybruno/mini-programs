@@ -1,7 +1,3 @@
-/**
-Names: Anthony Bruno and Jared Follet
-Pledge: I pledge my honor that I have abided by the Stevens Honor System.
-**/
 #include<string.h>
 #include<errno.h>
 #include<stdio.h>
