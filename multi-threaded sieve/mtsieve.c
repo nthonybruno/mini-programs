@@ -1,7 +1,3 @@
-/*
-Names: Nicholas Szegheo and Anthony Bruno
-Pledge: I pledge my honor that I have abided by the Stevens Honor System.
-*/
 #include <ctype.h>
 #include <errno.h>
 #include <getopt.h>
