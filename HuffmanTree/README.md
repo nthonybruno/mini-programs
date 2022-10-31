@@ -1,0 +1,1 @@
+Implementation of some Tree methods to complete the implementation of a Huffman Tree, and then using the Huffman tree to encode and decode messages (text strings)
